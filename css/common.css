@@ -1,0 +1,147 @@
+/* ---BASE--- */
+*{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    display: block;
+}
+
+body{
+    background: linear-gradient(0.25turn, #283048, #859398);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px; 
+    color: #fff;
+    line-height: 30px;
+}
+
+a{
+    color: #fff;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 70px;
+}
+
+h3{
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.btn{
+    background: #95a3c3;
+    color: #fff;
+    padding: 10px;
+    margin-top: 30px;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 30px;
+    border-radius: 8px;
+    border: 1px solid #95a3c3;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1)
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px; 
+    color: #fff;
+    align-items: center;
+    box-shadow: 0 0 10px  #dedede;
+}
+
+main{
+    width: 85%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.loading{
+    color: #aaa;
+    padding: 15px;
+    border: 1px solid #aaa;
+
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#items li{
+    margin: 20px 0;
+}
+
+/* ---FORM CREATE--- */
+
+#create .row{
+    margin: 10px 0;
+}
+
+#create label{
+    display: block;
+    width: 300px;
+}
+
+#create input{
+    outline: none;
+    transition: all 0.6s ease;
+}
+
+#create input:focus{
+    border: 2px solid #95a3c3;
+    box-shadow: 0 0 10px  #95a3c3;
+}
+
+#create input,
+#create textarea{
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+#create textarea{
+    resize: vertical;
+}
+
+/* ---FOOTER--- */
+
+footer{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    bottom: 0;
+    margin-top: 200px;
+}
+
+footer img{
+    margin-right: 15px;
+}
+
+@keyframes pulse {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.4;
+    }
+    
+}
+
+
+
