@@ -3,7 +3,7 @@ import { render, API } from "../js/utility.js";
 const add = () => {
     const container = document.querySelector("#form")
 
-    render (container, `<div>
+    render(container, `<div>
         <h3>Aggiungi un nuovo impegno</h3>
         <form id="create">
 
@@ -31,11 +31,11 @@ const add = () => {
             expires: event.target.expires.value
         };
 
-        fetch (API, {
+        fetch(API, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/JSON"
-            },            
+            },
             body: JSON.stringify(newData)
         })
     });
